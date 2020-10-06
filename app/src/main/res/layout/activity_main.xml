@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ban"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="@dimen/size93dp"
+        android:layout_height="@dimen/size50dp"
+        android:src="@drawable/btnback" />
+
+    <ImageView
+        android:id="@+id/imgNhacNen"
+        android:layout_width="@dimen/size50dp"
+        android:layout_height="@dimen/size50dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/amthanhmo" />
+
+
+    <TextView
+        android:id="@+id/txtDiem"
+        android:layout_width="@dimen/size200dp"
+        android:layout_height="@dimen/size50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/size30dp"
+        android:background="@drawable/khung"
+        android:gravity="center"
+        android:text="1000"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/txtThoiGian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtDiem"
+        android:layout_centerHorizontal="true"
+        android:text="00:03:00"
+        android:textColor="#ffffff"
+        android:textSize="17sp" />
+
+
+    <RelativeLayout
+        android:id="@+id/line1"
+        android:layout_width="@dimen/size300dp"
+        android:layout_height="160dp"
+        android:layout_below="@id/txtThoiGian"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/size10dp"
+        android:background="@drawable/disk">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/imgXiNgau1"
+                android:layout_width="@dimen/size80dp"
+                android:layout_height="@dimen/size80dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/xi_ngau_lac" />
+
+            <ImageView
+                android:id="@+id/imgXiNgau2"
+                android:layout_width="@dimen/size80dp"
+                android:layout_height="@dimen/size80dp"
+                android:layout_below="@id/imgXiNgau1"
+                android:src="@drawable/xi_ngau_lac" />
+
+            <ImageView
+                android:id="@+id/imgXiNgau3"
+                android:layout_width="@dimen/size80dp"
+                android:layout_height="@dimen/size80dp"
+                android:layout_below="@id/imgXiNgau1"
+                android:layout_toRightOf="@id/imgXiNgau2"
+                android:src="@drawable/xi_ngau_lac" />
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imgBatDau"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/buttonbatdau" />
+
+
+    </RelativeLayout>
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvBanCo"
+        android:layout_marginTop="@dimen/size20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line1"/>
+
+</RelativeLayout>
